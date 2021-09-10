@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF6200EE"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Bug History"
+            android:textColor="#fff"
+            android:textSize="24sp"/>
+
+        <EditText
+            android:id="@+id/topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:hint="topic"
+            android:inputType="text" />
+
+        <RadioGroup
+            android:id="@+id/radiobug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="type"
+                android:textSize="19dp"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonhigh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:textColor="@color/white"
+                android:textSize="19dp"
+                android:checked="true"
+                android:text="hight" />
+
+            <RadioButton
+                android:id="@+id/radioButtonlow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:textSize="19dp"
+                android:textColor="@color/white"
+                android:text="low" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="details"
+            android:maxLines="1"/>
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonChoose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select" />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:hint="Name For Image"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/uid"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="120dp"
+                android:hint="Complaint Id"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/buttonUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Upload" />
+
+    </TableLayout>
+</ScrollView>
