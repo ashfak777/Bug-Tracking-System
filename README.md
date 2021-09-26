@@ -23,5 +23,5 @@ Web:
 * MySQL Server – XAMPP
 
 #### Click the image below to be redirected to YouTube for a video demo of the application in action.
+ <a href="https://www.youtube.com/watch?v=ACzG7wl61Dw"><img src="https://img.youtube.com/vi/ACzG7wl61Dw/0.jpg" alt="Bug Tracking System"></a>
 
-[![Everything Is AWESOME](https://yt-embed.herokuapp.com/embed?v=ACzG7wl61Dw)](https://youtu.be/ACzG7wl61Dw "Bug Tracking System")
